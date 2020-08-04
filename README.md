@@ -44,7 +44,7 @@ Interesting files:
 
 * [ASP.NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core) - Framework
 * [Visual Studio 2019](https://visualstudio.microsoft.com/cs/vs/) - IDE
-* [SignalR](https://github.com/dotnet/aspnetcore) - Real-time communication lib
+* [SignalR](https://dotnet.microsoft.com/apps/aspnet/signalr) - Real-time communication lib
 * [Identity Server](https://github.com/IdentityServer/IdentityServer4) - Authorization, authentification and account management
 
 ## Author
