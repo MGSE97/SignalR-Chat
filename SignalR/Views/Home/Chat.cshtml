@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewData["Title"] = "Chat";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>SignalR chat</p>
+
+<div class="row">
+    <div class="col-12">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <label for="messageInput" class="input-group-text">Message</label>
+            </div>
+            <input type="text" class="form-control" id="messageInput" />
+            <div class="input-group-append">
+                <button type="button" class="btn btn-outline-primary" id="sendButton">Send</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <hr />
+    </div>
+    <div class="col-12">
+        <ul id="messagesList" class="px-0" style="list-style: none"></ul>
+    </div>
+</div>
+
+<script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>
