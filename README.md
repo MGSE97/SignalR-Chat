@@ -7,14 +7,36 @@ Based on [Tutorial: Get started with ASP.NET Core SignalR](https://docs.microsof
 ## Getting Started
 
 Clone this repository, and open solution using Visual Studio 2019 or later.
-Then Build and Run the project.
+Then Build and Run the SignalR project.
 
 ### Prerequisites
 
 - Visual Studio 2019
 - ASP.NET Core 3.1
 
-### Website
+### Solution
+
+Projects:
+- ChatCore - Complete chat logic
+- SignalR - Website presentation
+
+#### Chat
+
+All chat logic has moved to ChatCore project.
+This way is simpler to change Presentation Layer (Website).
+It`s bit more complicated, but all methods and classes are documented.
+
+Still uses simplest in memory storage methods for users.
+
+Interesting paths:
+```
+~/Startup.cs
+~/Hubs/ChatHub.cs
+~/Services/ChatService.cs
+~/Services/MessageHandlers
+```
+
+#### Website
 
 Website is simple MVC template with In-application Authorization.
 
@@ -22,11 +44,11 @@ To use chat log-in as user, then Chat tab will appear at main menu.
 Navigate to Chat view and send messages.
 
 It's probably better to have multiple clients connected, you can use privacy mode or other browsers.
+                  
 
 Interesting files:
 ```
 ~/Startup.cs
-~/Hubs/ChatHub.cs
 ~/wwwroot/js/chat.js
 ~/wwwroot/lib/microsoft/signalr
 ~/Views/Home/Chat.cshtml

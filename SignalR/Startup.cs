@@ -1,18 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using ChatCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
 using SignalR.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using SignalR.Hubs;
 
 namespace SignalR
 {
@@ -35,7 +29,7 @@ namespace SignalR
             services.AddControllersWithViews();
             services.AddRazorPages();
 
-            services.AddSignalR();
+            services.UseChat(); // <<< Chat services
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -67,7 +61,7 @@ namespace SignalR
                     pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
                 
-                endpoints.MapHub<ChatHub>("/chathub");
+                endpoints.UseChat(); // <<< Chat hubs
             });
         }
     }
