@@ -77,3 +77,9 @@ Interesting files:
 
 This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.txt) file for details
 
+## Donate
+
+Found this project useful or want to buy me a 🍺, ☕, 🍵. Consider donating using buttons bellow.
+
+[![Donate PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.com/donate?hosted_button_id=HTDSBL37M2PR4&source=url)
+[![Donate Crypto](https://img.shields.io/badge/Donate-Crypto-yellow.svg)](https://commerce.coinbase.com/checkout/ab045b90-3fc5-4dc6-8310-b51e2617a5e4)
